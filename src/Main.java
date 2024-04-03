@@ -12,7 +12,9 @@ public class Main {
         double d = scanner.nextInt();
         System.out.println("Введите вес каждого человека: ");
 
-        System.out.println("Минимальное количество байдарок: " +count );
+        for (int i=0; i < people.length; i++) {
+            System.out.print(people[i]+"\t");
+        }
 
         int count = 0;
 
@@ -29,6 +31,6 @@ public class Main {
             }
 
         }
-
+        System.out.println("Минимальное количество байдарок: " +count );
     }
 }
